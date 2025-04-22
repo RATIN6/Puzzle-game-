@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quebra-Cabeça</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quebra-Cabeça</h1>
+    <div id="controls">
+        <label for="size">Tamanho:</label>
+        <select id="size">
+            <option value="3">3x3</option>
+            <option value="4">4x4</option>
+            <option value="5">5x5</option>
+        </select>
+        <button onclick="startGame()">Reiniciar</button>
+        <button onclick="toggleTheme()">Tema</button>
+        <p>Movimentos: <span id="moves">0</span></p>
+        <p>Tempo: <span id="timer">00:00</span></p>
+    </div>
+    <div id="puzzle"></div>
+    <div id="win-message" class="hidden">
+        <h2>Parabéns! Você venceu!</h2>
+        <button onclick="startGame()">Jogar Novamente</button>
+    </div>
+
+    <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+    <audio id="winSound" src="win.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
