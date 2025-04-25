@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 20px;
+  background: #f0f0f0;
+  text-align: center;
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+h1 {
+  margin-bottom: 10px;
+}
+#board {
+  display: grid;
+  gap: 4px;
+  margin: 10px 0;
+}
+.tile {
+  background: #2196F3;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.tile.empty {
+  background: transparent;
+  cursor: default;
+}
+.stats, .controls {
+  margin-bottom: 10px;
+}
+select, button {
+  padding: 5px;
+  margin-left: 5px;
+}
+.ranking {
+  margin-top: 20px;
+  text-align: left;
+}
